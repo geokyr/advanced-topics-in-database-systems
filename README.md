@@ -57,6 +57,10 @@ spark-submit main.py <query_number> <worker_number> <api_type>
 
 Here, `<query_number>` is the number of the query we want to run (valid values are 1, 2, 3, 4, 5), `<worker_number>` is the number of workers (valid values are 1, 2) and `<api_type>` is the API we want to use (only applicable for `<query_number>` equal to 3 and valid values are `df` for DataFrame/SQL API and `rdd` for RDD API).
 
+## Monitoring
+
+The Apache Spark Master UI is available at `http://<master_ip>:8080/`. The Hadoop Overview UI is available at `http://<master_ip>:9870/`.
+
 ## Report
 
 The query results are available in the form of tables on the project report. The report also contains the run time of each query for 1 and 2 workers and some analysis of the results.
