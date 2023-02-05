@@ -1,5 +1,5 @@
-adv-db-project
---------------
+ntua-advanced-databases
+-----------------------
 
 This repository is about the project for the Advanced Topics in Database Systems course of the 9th semester at the National Technical University of Athens.
 
