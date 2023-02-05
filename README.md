@@ -18,29 +18,32 @@ We are required to use the Apache Spark platform (3.1 or higher) and the HDFS fi
 
 Setup instructions are available on the project report and the guides under the `sources` directory. It mainly involves setting up a Hadoop multi-node cluster, installing Apache Spark and setting up the environment.
 
-We used ~okeanos to set up the cluster, which consists of one master and one slave node. The master node is used to run the Spark master and the HDFS namenode, while also being used as a Spark worker and HDFS datanode. The slave node is used to run the Spark worker and the HDFS datanode.
+We used [~okeanos](https://astakos.okeanos-knossos.grnet.gr/ui/landing) to set up the cluster, which consists of one master and one slave node. The master node is used to run the Spark master and the HDFS namenode, while also being used as a Spark worker and HDFS datanode. The slave node is used to run the Spark worker and the HDFS datanode.
 
 ## HDFS
 
-We used the HDFS file system to store the data. We uploaded the data folder on our HDFS and we later used the HDFS to store our results. The first part was done through the terminal with commands like
+We used the HDFS file system to store the data. We first uploaded the data folder on our HDFS and we later used the HDFS to store our query results. The first part was done through the terminal with commands like:
 ```
 hdfs dfs -mkdir /data
 hdfs dfs -put data /data
 ```
-, while the second part was done using PySpark, as shown in the `main.py` file.
+
+The second part was done using PySpark, as shown in the `main.py` file.
 
 ## Running the project
 
-After setting up the cluster, we can run the project. Make sure that you have run
+After setting up the cluster, we can run the project. Make sure that you have run the following commands on the master node to have the HDFS and Spark runnning:
 ```
 start-dfs.sh
 start-all.sh
 ```
-on the master node to have the HDFS and Spark running. This creates 2 workers, one on the master node and one on the slave node. We can suspend the master worker to run queries with only one worker by running
+
+This creates 2 workers, one on the master node and one on the slave node. We can suspend the master worker to run queries with only one worker by running the following command on the master node:
 ```
 ./<spark_directory>/sbin/stop-worker.sh
 ```
-on the master node. We can then resume the master worker by running
+
+We can then resume the master worker by running the following command on the master node:
 ```
 start-all.sh
 ```
@@ -51,7 +54,8 @@ To run a query, we can use the following command:
 ```
 spark-submit main.py <query_number> <worker_number> <api_type>
 ```
-where `<query_number>` is the number of the query we want to run (valid values are 1, 2, 3, 4, 5), `<worker_number>` is the number of workers (valid values are 1, 2) and `<api_type>` is the API we want to use (only applicable for `<query_number>` equal to 3 and valid values are `df` for DataFrame/SQL API and `rdd` for RDD API).
+
+Here, `<query_number>` is the number of the query we want to run (valid values are 1, 2, 3, 4, 5), `<worker_number>` is the number of workers (valid values are 1, 2) and `<api_type>` is the API we want to use (only applicable for `<query_number>` equal to 3 and valid values are `df` for DataFrame/SQL API and `rdd` for RDD API).
 
 ## Report
 
