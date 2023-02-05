@@ -4,11 +4,9 @@ download_spark () {
 	cd ~
 	wget https://archive.apache.org/dist/spark/spark-3.3.1/spark-3.3.1-bin-hadoop3.tgz
 	tar -xzf spark-3.3.1-bin-hadoop3.tgz
-	
 }
 
 configure_spark () {
-
 	echo "export SPARK_HOME=/home/user/spark-3.3.1-bin-hadoop3" >> ~/.bashrc
 	echo "export PATH=\$PATH:\$SPARK_HOME/bin" >> ~/.bashrc
 	echo "export PYSPARK_PYTHON=python3.8" >> ~/.bashrc
@@ -36,7 +34,6 @@ configure_spark () {
 	echo "slave" >> workers
 }
 
-
 echo "STARTING DOWNLOAD ON MASTER"
 download_spark
 
@@ -48,4 +45,3 @@ configure_spark
 
 echo "STARTING HADOOP CONFIGURE ON SLAVE"
 ssh user@slave "$(typeset -f configure_spark); configure_spark"
-

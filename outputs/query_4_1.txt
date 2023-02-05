@@ -1,5 +1,4 @@
-Starting Query 4 with 1 workers...
-Time elapsed for Query 4: 10.996814012527466
+Time elapsed for Query 4 with 1 worker: 10.39488959312439
 |day_of_week|hour_of_day|sum_passenger_count|
 |---|---|---|
 |1|0|228580.0|

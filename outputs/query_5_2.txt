@@ -1,5 +1,4 @@
-Starting Query 5 with 2 workers...
-Time elapsed for Query 5: 12.232147693634033
+Time elapsed for Query 5 with 2 workers: 12.192766904830933
 |month|day_of_month|avg_tip_percentage|
 |---|---|---|
 |1|9|45.78674775487207|

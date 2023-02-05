@@ -1,5 +1,4 @@
-Starting Query 3 with 1 workers, using DataFrame/SQL API...
-Time elapsed for Query 3: 13.266789674758911
+Time elapsed for Query 3 with 1 worker, using DataFrame/SQL API: 14.659557819366455
 |group|avg_trip_distance|avg_total_amount|
 |---|---|---|
 |0|5.576410377852007|19.903702637879007|

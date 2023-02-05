@@ -1,5 +1,4 @@
-Starting Query 2 with 2 workers...
-Time elapsed for Query 2: 23.334222555160522
+Time elapsed for Query 2 with 2 workers: 21.776004552841187
 |VendorID|tpep_pickup_datetime|tpep_dropoff_datetime|passenger_count|trip_distance|RatecodeID|store_and_fwd_flag|PULocationID|DOLocationID|payment_type|fare_amount|extra|mta_tax|tip_amount|tolls_amount|improvement_surcharge|total_amount|congestion_surcharge|airport_fee|
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 |1|2022-01-22 11:39:07|2022-01-22 12:31:09|1.0|33.4|1.0|Y|70|265|4|88.0|0.0|0.5|0.0|193.3|0.3|282.1|0.0|0.0|

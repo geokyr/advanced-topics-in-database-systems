@@ -1,8 +1,6 @@
 from pyspark.sql.functions import month, col, max
 
-# ------------------------------
 # query 2 - find for every month the trip with the highest tolls amount
-
 def run_query_2(df_taxi_trips):
     return df_taxi_trips.filter(col("tolls_amount") != 0)\
         .groupBy(month(col("tpep_pickup_datetime")))\

@@ -1,11 +1,8 @@
-from pyspark.sql.functions import col, month, dayofmonth, avg, row_number, desc
 from pyspark.sql import Window
+from pyspark.sql.functions import col, month, dayofmonth, avg, row_number, desc
 
-# ------------------------------
 # query 5 - find top 5 days of each month where the trips had the highest average percentage of tip to fare amount ratio
-
 def run_query_5(df_taxi_trips):    
-
     return df_taxi_trips.withColumn("month", (month("tpep_pickup_datetime")))\
         .withColumn("day_of_month", (dayofmonth("tpep_pickup_datetime")))\
         .withColumn("tip_percentage", (col("tip_amount") / col("fare_amount")) * 100)\

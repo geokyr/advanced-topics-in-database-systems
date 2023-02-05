@@ -21,7 +21,6 @@ download__hadoop () {
 	echo 'export HADOOP_CONF_DIR=$HADOOP_INSTALL/etc/hadoop' >> ~/.bashrc
 
 	source ~/.bashrc
-
 }
 
 configure_hadoop () {	
@@ -29,7 +28,6 @@ configure_hadoop () {
 		CORE_SITE_CONTENT="\t<property>\n\t\t<name>fs.defaultFS</name>\n\t\t<value>hdfs://master:9000</value>\n\t</property>"
 		INPUT_CORE_SITE_CONTENT=$(echo $CORE_SITE_CONTENT | sed 's/\//\\\//g')
 		sed -i "/<\/configuration>/ s/.*/${INPUT_CORE_SITE_CONTENT}\n&/" /home/user/hadoop-3.3.4/etc/hadoop/core-site.xml
-
 
 ## Edit hdfs-site.xml to set hadoop file system parameters
 		HDFS_SITE_CONTENT="\t<property>\n\t\t<name>dfs.replication</name>\n\t\t<value>3</value>\n\t\t<description>Default block replication.</description>\n\t</property>"
@@ -60,4 +58,3 @@ source ~/.bashrc; configure_hadoop
 
 echo "STARTING HADOOP CONFIGURE ON SLAVE"
 ssh user@slave "$(typeset -f configure_hadoop); configure_hadoop"
-
