@@ -1,7 +1,7 @@
 adv-db-project
 --------------
 
-This is our project for the Advanced Topics in Database Systems course of the 9th semester at the National Technical University of Athens.
+This repository is about the project for the Advanced Topics in Database Systems course of the 9th semester at the National Technical University of Athens.
 
 ## Team 6 - Members
 
