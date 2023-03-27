@@ -29,7 +29,7 @@ hdfs dfs -put data /data
 
 The second part was done using PySpark, as shown in the `main.py` file.
 
-## Running the project
+## Running the Project
 
 After setting up the cluster, we can run the project. Make sure that you have run the following commands on the master node to have the HDFS and Spark runnning:
 ```
