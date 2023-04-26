@@ -4,8 +4,8 @@ This repository is for the project of the Advanced Topics in Database Systems co
 
 ## Team 6 - Members
 
-* [**Kyriakopoulos George**](https://github.com/geokyr)
-* [**Tzelepis Serafeim**](https://github.com/sertze)
+- [**Kyriakopoulos George**](https://github.com/geokyr)
+- [**Tzelepis Serafeim**](https://github.com/sertze)
 
 ## Project Description
 
@@ -22,37 +22,32 @@ We used [~okeanos](https://astakos.okeanos-knossos.grnet.gr/ui/landing) to set u
 ## HDFS
 
 We used the HDFS file system to store the data. We first uploaded the data folder on our HDFS and we later used the HDFS to store our query results. The first part was done through the terminal with commands like:
-```
-hdfs dfs -mkdir /data
-hdfs dfs -put data /data
-```
+
+    hdfs dfs -mkdir /data
+    hdfs dfs -put data /data
 
 The second part was done using PySpark, as shown in the `main.py` file.
 
 ## Running the Project
 
 After setting up the cluster, we can run the project. Make sure that you have run the following commands on the master node to have the HDFS and Spark runnning:
-```
-start-dfs.sh
-start-all.sh
-```
+
+    start-dfs.sh
+    start-all.sh
 
 This creates 2 workers, one on the master node and one on the slave node. We can suspend the master worker to run queries with only one worker by running the following command on the master node:
-```
-./<spark_directory>/sbin/stop-worker.sh
-```
+
+    ./<spark_directory>/sbin/stop-worker.sh
 
 We can then resume the master worker by running the following command on the master node:
-```
-start-all.sh
-```
+
+    start-all.sh
 
 There is a `main.py` file that sets up the Spark Session, reads the data from the HDFS, creates the DataFrames and RDDs and then runs a query. The results are then output on a local .txt file together with the time to run the query and the query result is also stored in the HDFS.
 
 To run a query, we can use the following command:
-```
-spark-submit main.py <query_number> <worker_number> <api_type>
-```
+
+    spark-submit main.py <query_number> <worker_number> <api_type>
 
 Here, `<query_number>` is the number of the query we want to run (valid values are 1, 2, 3, 4, 5), `<worker_number>` is the number of workers (valid values are 1, 2) and `<api_type>` is the API we want to use (only applicable for `<query_number>` equal to 3 and valid values are `df` for DataFrame/SQL API and `rdd` for RDD API).
 
