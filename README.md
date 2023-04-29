@@ -1,6 +1,6 @@
 # ntua-advanced-databases
 
-This repository is for the project of the Advanced Topics in Database Systems course during the 9th semester at the National Technical University of Athens.
+Semester Project for the [**Advanced Topics in Database Systems**](https://www.ece.ntua.gr/en/undergraduate/courses/3189) course, during the 9th semester of the **School of Electrical and Computer Engineering at the National Technical University of Athens**.
 
 ## Team 6 - Members
 
@@ -9,7 +9,7 @@ This repository is for the project of the Advanced Topics in Database Systems co
 
 ## Project Description
 
-The project is about processing big data using the Apache Spark platform. The data is a collection of trip records from the New York City Taxi and Limousine Commission (TLC). The data (per month) is available at [**NYC Taxi and Limousine Commission**](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page.). The data is in CSV format and contains information about the pickup and dropoff locations, the pickup and dropoff times, the number of passengers, the trip distance, the payment type, the fare amount, the tip amount, the tolls amount and others.
+The project is about processing big data using the Apache Spark platform. The data is a collection of trip records from the New York City Taxi and Limousine Commission (TLC). The data (per month) is available at [NYC Taxi and Limousine Commission](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page.). The data is in CSV format and contains information about the pickup and dropoff locations, the pickup and dropoff times, the number of passengers, the trip distance, the payment type, the fare amount, the tip amount, the tolls amount and others.
 
 We are required to use the Apache Spark platform (3.1 or higher) and the HDFS file system to store the data. We are also required to use the DataFrame/SQL API of Spark and the RDD API. We can use either Scala, Java or Python.
 
@@ -17,7 +17,7 @@ We are required to use the Apache Spark platform (3.1 or higher) and the HDFS fi
 
 Setup instructions are available on the project report and the guides under the `sources` directory. It mainly involves setting up a Hadoop multi-node cluster, installing Apache Spark and setting up the environment.
 
-We used [**~okeanos**](https://astakos.okeanos-knossos.grnet.gr/ui/landing) to set up the cluster, which consists of one master and one slave node. The master node is used to run the Spark master and the HDFS namenode, while also being used as a Spark worker and HDFS datanode. The slave node is used to run the Spark worker and the HDFS datanode.
+We used [~okeanos](https://astakos.okeanos-knossos.grnet.gr/ui/landing) to set up the cluster, which consists of one master and one slave node. The master node is used to run the Spark master and the HDFS namenode, while also being used as a Spark worker and HDFS datanode. The slave node is used to run the Spark worker and the HDFS datanode.
 
 ## HDFS
 
