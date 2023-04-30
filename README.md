@@ -9,9 +9,9 @@ Semester Project for the [**Advanced Topics in Database Systems**](https://www.e
 
 ## Project Description
 
-The project is about processing big data using the Apache Spark platform. The data is a collection of trip records from the New York City Taxi and Limousine Commission (TLC). The data (per month) is available at [NYC Taxi and Limousine Commission](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page.). The data is in CSV format and contains information about the pickup and dropoff locations, the pickup and dropoff times, the number of passengers, the trip distance, the payment type, the fare amount, the tip amount, the tolls amount and others.
+The project is about **processing big data** using the [**Apache Spark**](https://spark.apache.org/) platform. The data is a collection of trip records from the New York City Taxi and Limousine Commission (TLC). The data (per month) is available at [NYC Taxi and Limousine Commission](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page.). The data is in CSV format and contains information about the pickup and dropoff locations, the pickup and dropoff times, the number of passengers, the trip distance, the payment type, the fare amount, the tip amount, the tolls amount and others.
 
-We are required to use the Apache Spark platform (3.1 or higher) and the HDFS file system to store the data. We are also required to use the DataFrame/SQL API of Spark and the RDD API. We can use either Scala, Java or Python.
+We used the **Apache Spark** platform (3.1 or higher) and **HDFS** to store the data. We also used the **DataFrame/SQL API** and the **RDD API** of Spark. All the code was written in **Python**, utilizing the **PySpark** library.
 
 ## Setup
 
