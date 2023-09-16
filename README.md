@@ -1,17 +1,17 @@
 # ntua-advanced-databases
 
-Semester Project for the [**Advanced Topics in Database Systems**](https://www.ece.ntua.gr/en/undergraduate/courses/3189) course, during the 9th semester of the **School of Electrical and Computer Engineering at the National Technical University of Athens**.
+Semester Project for the [Advanced Topics in Database Systems](https://www.ece.ntua.gr/en/undergraduate/courses/3189) course, during the 9th semester of the School of Electrical and Computer Engineering at the National Technical University of Athens.
 
 ## Team 6 - Members
 
-* [**Kyriakopoulos Georgios**](https://github.com/geokyr)
-* [**Tzelepis Serafeim**](https://github.com/sertze)
+* [Kyriakopoulos Georgios](https://github.com/geokyr)
+* [Tzelepis Serafeim](https://github.com/sertze)
 
 ## Project Description
 
-The project is about **processing big data** using the [**Apache Spark**](https://spark.apache.org/) platform. The data is a collection of trip records from the New York City Taxi and Limousine Commission (TLC). The data (per month) is available at [NYC Taxi and Limousine Commission](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page.). The data is in CSV format and contains information about the pickup and dropoff locations, the pickup and dropoff times, the number of passengers, the trip distance, the payment type, the fare amount, the tip amount, the tolls amount and others.
+The project is about processing big data using the [Apache Spark](https://spark.apache.org/) platform. The data is a collection of trip records from the New York City Taxi and Limousine Commission (TLC). The data (per month) is available at [NYC Taxi and Limousine Commission](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page.). The data is in CSV format and contains information about the pickup and dropoff locations, the pickup and dropoff times, the number of passengers, the trip distance, the payment type, the fare amount, the tip amount, the tolls amount and others.
 
-We used the **Apache Spark** platform and **HDFS** to store the data. We also used both the **DataFrame/SQL API** and the **RDD API** of Spark. All the code was written in **Python**, utilizing the **PySpark** library.
+We used the Apache Spark platform and HDFS to store the data. We also used both the DataFrame/SQL API and the RDD API of Spark. All the code was written in Python, utilizing the PySpark library.
 
 ## Setup
 
