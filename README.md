@@ -1,4 +1,4 @@
-# ntua-advanced-databases
+# ece-ntua-advanced-databases
 
 Semester Project for the [Advanced Topics in Database Systems](https://www.ece.ntua.gr/en/undergraduate/courses/3189) course, during the 9th semester of the School of Electrical and Computer Engineering at the National Technical University of Athens.
 
