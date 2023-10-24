@@ -4,8 +4,8 @@ Semester Project for the [Advanced Topics in Database Systems](https://www.ece.n
 
 ## Team 6 - Members
 
-* [Kyriakopoulos Georgios](https://github.com/geokyr)
-* [Tzelepis Serafeim](https://github.com/sertze)
+* [Georgios Kyriakopoulos](https://github.com/geokyr)
+* [Serafeim Tzelepis](https://github.com/sertze)
 
 ## Project Description
 
